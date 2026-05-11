@@ -1,16 +1,27 @@
+:root {
+  --primary-bg-color: #DCC9A8;
+  --primary-font-color: #332D25;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #DCC9A8;
+    background-color: var(--primary-bg-color);
     font-family: "Sofia Sans", "sans-serif";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #332D25;
+    color: var(--primary-font-color);
+    height: 100%;
 }
 
-.container {
+.outer-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .about-container {
@@ -19,8 +30,31 @@ body {
     justify-content: flex-start;
 }
 
+a {
+    border: 0.5px solid var(--primary-font-color);
+    color: var(--primary-font-color);
+    background-color: #B2A68C;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 .me {
-    display: 'flex',
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.contact {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .name-container {
