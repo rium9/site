@@ -8,10 +8,7 @@ html, body {
   height: 100%;
   margin: 0;
   overflow: hidden;
-}
-
-body {
-    
+  user-select: none;
 }
 
 body {
@@ -99,6 +96,25 @@ h2 {
 .icon {
     width: 1.6rem;
     height: 1.6rem;
+}
+
+.circle {
+    border: 1px solid var(--primary-font-color);
+    background-color: var(--primary-bg-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    animation: outandaway 500ms forwards;
+}
+
+@keyframes outandaway{
+  0% {
+    transform: scale(0.2);
+  } 
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 footer {
