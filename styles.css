@@ -1,6 +1,6 @@
 :root {
-  --primary-bg-color: #DCC9A8;
-  --primary-font-color: #332D25;
+  --primary-bg-color: #ffffff;
+  --primary-font-color: #000000;
 }
 
 html, body {
@@ -13,7 +13,6 @@ html, body {
 
 body {
     background-color: var(--primary-bg-color);
-    font-family: "Sofia Sans", "sans-serif";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -35,7 +34,7 @@ main {
 
 .about-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -43,12 +42,6 @@ main {
 a {
     color: var(--primary-font-color);
     padding: 5px;
-}
-
-.me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h1 {
@@ -63,40 +56,16 @@ h2 {
 
 .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 0.3rem;
-    border-top: 1px solid var(--primary-font-color);
-
-    margin-top: 10px;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-}
-
-.skills ul {
-    font-family: 'Courier New', Courier, sans-serif;
-    font-size: 0.9rem;
-    max-width: 268px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    list-style: none;
-
-    padding-inline-start: 0;
-}
-
-.skills li:not(:first-child)::before {
-    content: "•";
-    margin-right: 0.5rem;
+    border-left: 1px solid var(--primary-font-color);
+    margin-left: 15px;
+    padding-left: 10px;
 }
 
 .icon {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 .circle {

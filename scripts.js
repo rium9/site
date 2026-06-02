@@ -21,8 +21,4 @@ function rippleClickHandler(event) {
     }, 1000);
 }
 
-function addRippleListener() {
-    document.addEventListener('click', rippleClickHandler);
-}
-
-addRippleListener();
+document.addEventListener('click', rippleClickHandler);
