@@ -2,10 +2,13 @@
   --primary-bg-color: #ffffff;
   --primary-font-color: #000000;
   --highlight-color: #700e0e;
+<<<<<<< HEAD
 }
 
 * {
   touch-action: manipulation;
+=======
+>>>>>>> 2527d47 (Fix html tag & remove styling)
 }
 
 html, body {
@@ -45,8 +48,7 @@ main {
 
 .me {
   position: relative;
-  padding-top: 12px;
-  padding-right: 3px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
