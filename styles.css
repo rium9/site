@@ -16,18 +16,6 @@ html, body {
   user-select: none;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
-  font: inherit;
-  border-radius: 0;
-  appearance: none;
-  cursor: pointer;
-}
-
 body {
     color: var(--primary-font-color);
     background-color: var(--primary-bg-color);
@@ -122,6 +110,7 @@ footer {
   opacity: 0.6;
   font-size: 0.85rem;
   padding-right: 1rem;
+<<<<<<< HEAD
 }
 
 footer > div {
@@ -145,4 +134,6 @@ footer > div > button {
 
 .themes-2 {
   background-color: black;
+=======
+>>>>>>> 37e7bb1 (Remove redundant styles)
 }
