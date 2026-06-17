@@ -18,7 +18,26 @@ function rippleClickHandler(event) {
 
     setTimeout(() => {
         main.removeChild(div);
+        modifier -= step;
     }, 1000);
 }
 
+function setTheme1(e) {
+    e.stopPropagation();
+    document.documentElement.style.setProperty('--primary-bg-color', '#ffffff');
+    document.documentElement.style.setProperty('--primary-font-color', '#000000');
+}
+
+function setTheme2(e) {
+    e.stopPropagation();
+    document.documentElement.style.setProperty('--primary-bg-color', '#000000');
+    document.documentElement.style.setProperty('--primary-font-color', '#ffffff');
+}
+
 document.addEventListener('click', rippleClickHandler);
+
+const theme1Button = document.getElementById("theme-1");
+theme1Button.addEventListener('click', setTheme1);
+
+const theme2Button = document.getElementById("theme-2");
+theme2Button.addEventListener('click', setTheme2);

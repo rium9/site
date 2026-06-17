@@ -1,6 +1,7 @@
 :root {
   --primary-bg-color: #ffffff;
   --primary-font-color: #000000;
+  --highlight-color: #700e0e;
 }
 
 html, body {
@@ -15,6 +16,7 @@ body {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 main {
@@ -22,8 +24,25 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
+.me {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.docs-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.cv-icon {
+  width: 1.2rem;
+  color: var(--highlight-color);
+}
 
 .about-container {
     display: flex;
@@ -76,8 +95,35 @@ h2 {
 }
 
 footer {
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
   opacity: 0.6;
   font-size: 0.85rem;
   padding-right: 1rem;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+footer > div > button {
+  all: unset;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.themes-1 {
+  background-color: rgb(255, 255, 255);
+}
+
+.themes-2 {
+  background-color: black;
 }
