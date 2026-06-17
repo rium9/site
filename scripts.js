@@ -26,12 +26,14 @@ function setTheme1(e) {
     e.stopPropagation();
     document.documentElement.style.setProperty('--primary-bg-color', '#ffffff');
     document.documentElement.style.setProperty('--primary-font-color', '#000000');
+    document.documentElement.style.setProperty('--highlight-color', '#700e0e')
 }
 
 function setTheme2(e) {
     e.stopPropagation();
     document.documentElement.style.setProperty('--primary-bg-color', '#000000');
     document.documentElement.style.setProperty('--primary-font-color', '#ffffff');
+    document.documentElement.style.setProperty('--highlight-color', '#abd99a')
 }
 
 document.addEventListener('click', rippleClickHandler);
