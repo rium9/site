@@ -33,7 +33,7 @@ function setTheme2(e) {
     e.stopPropagation();
     document.documentElement.style.setProperty('--primary-bg-color', '#000000');
     document.documentElement.style.setProperty('--primary-font-color', '#ffffff');
-    document.documentElement.style.setProperty('--highlight-color', '#abd99a')
+    document.documentElement.style.setProperty('--highlight-color', '#87e266')
 }
 
 document.addEventListener('click', rippleClickHandler);
