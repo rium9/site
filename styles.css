@@ -2,13 +2,10 @@
   --primary-bg-color: #ffffff;
   --primary-font-color: #000000;
   --highlight-color: #700e0e;
-<<<<<<< HEAD
 }
 
 * {
   touch-action: manipulation;
-=======
->>>>>>> 2527d47 (Fix html tag & remove styling)
 }
 
 html, body {
@@ -110,7 +107,6 @@ footer {
   opacity: 0.6;
   font-size: 0.85rem;
   padding-right: 1rem;
-<<<<<<< HEAD
 }
 
 footer > div {
@@ -134,6 +130,4 @@ footer > div > button {
 
 .themes-2 {
   background-color: black;
-=======
->>>>>>> 37e7bb1 (Remove redundant styles)
 }
