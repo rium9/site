@@ -18,7 +18,6 @@ function rippleClickHandler(event) {
 
     setTimeout(() => {
         main.removeChild(div);
-        modifier -= step;
     }, 1000);
 }
 
