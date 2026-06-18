@@ -4,6 +4,10 @@
   --highlight-color: #700e0e;
 }
 
+* {
+  touch-action: manipulation;
+}
+
 html, body {
   margin: 0;
   user-select: none;
